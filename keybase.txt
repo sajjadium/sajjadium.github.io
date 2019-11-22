@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/sajjadium
+--------------------------------------------------------------------
+
+I hereby claim:
+
+ * I am an admin of https://sajjadium.github.io
+ * I am sajjadium (https://keybase.io/sajjadium) on keybase.
+ * I have a public key ASAtQQU4HmulTkW1r69TJ5gyeQWecD5avjcE5OrqO99L1wo
+
+To do so, I am signing this object:
+
+{
+ "body": {
+   "key": {
+     "eldest_kid": "01202d4105381e6ba54e45b5afaf5327983279059e703e5abe3704e4eaea3bdf4bd70a",
+     "host": "keybase.io",
+     "kid": "01202d4105381e6ba54e45b5afaf5327983279059e703e5abe3704e4eaea3bdf4bd70a",
+     "uid": "ba6b4605d42007893d69410b1b7f6519",
+     "username": "sajjadium"
+   },
+   "merkle_root": {
+     "ctime": 1560876159,
+     "hash": "8791c16a525caa95963728ea86e2e1dce8cc1435c5e19d3ecf88e796fddc9179985d5a5a31db79b8b157e28cae13c98ada8eeca7ad1be72e1fa1bf204ab862a3",
+     "hash_meta": "0db265cf31f355c0b6708d927dcb347f142b424d3f885e67079c5ee8203e93e2",
+     "seqno": 5594813
+   },
+   "service": {
+     "entropy": "vr9nccdfzlGllvE5srrcVZ3I",
+     "hostname": "sajjadium.github.io",
+     "protocol": "https:"
+   },
+   "type": "web_service_binding",
+   "version": 2
+ },
+ "client": {
+   "name": "keybase.io go client",
+   "version": "4.1.0"
+ },
+ "ctime": 1560876180,
+ "expire_in": 504576000,
+ "prev": "5195b1edf985d9734319592528ae0c20305bcaa255c351ce8a6ff0d6a8b9a5cf",
+ "seqno": 8,
+ "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgLUEFOB5rpU5Fta+vUyeYMnkFnnA+Wr43BOTq6jvfS9cKp3BheWxvYWTESpcCCMQgUZWx7fmF2XNDGVklKK4MIDBbyqJVw1HOim/w1qi5pc/EIH/R719GdKq9q+mJkwEJE2O4CczvC+gJ3nGR+oRRy1M/AgHCo3NpZ8RAnY5PRu3TleqZAORLFXitlLGHOGob+VjggA7jGs6Hngb/2sCb6Nn0jvfbEEG3WR8F5MXLkDizMJgiGlmE5G6sBKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJzuly/E+2GoRKb3qmLJyKD11z6Y3SmhTeNrrXe3PcS1o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/sajjadium
+
+==================================================================
