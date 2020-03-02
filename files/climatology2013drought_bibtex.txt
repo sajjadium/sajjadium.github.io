@@ -1,6 +1,0 @@
-@article{climatology2013drought,
-    title = {Monitoring and Forecasting Drought Impact on Dryland Farming Areas.},
-    authors = {Saleh Arshad and Saeed Morid and Mohammad Reza Mobasheri and Majid Agha Alikhani and Sajjad Arshad},
-    journal = {International Journal of Climatology},
-    year = {2013}
-}
