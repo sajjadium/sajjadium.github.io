@@ -299,6 +299,7 @@
         <script>
             var iframe = document.getElementById("other_contents");
             iframe.onload = function() {
+                iframe.style.height = "100%";
                 iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
             }
         </script>
