@@ -1,0 +1,1357 @@
+<html>
+<head>
+    <title>Sajjad Arshad - Android Security @Google</title>
+    <link href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+</head>
+    <body>
+        <style>
+            html, body {
+                width: 100%;
+                margin: auto;
+            }
+            a {
+                color: blue;
+                text-decoration: none;
+            }
+            table, div, img {
+                max-width: 100%;
+                max-height: 100%;
+                margin:0;
+                padding:0;
+            }
+        </style>
+        <div style="text-align: justify; font-size: 150%">
+            <b>Cached and Confused: Web Cache Deception in the Wild</b><br>
+            Seyed Ali Mirheidari, <b>Sajjad Arshad</b>, Kaan Onarlioglu, Bruno Crispo, Engin Kirda, William Robertson<br>
+            USENIX Security Symposium<br>
+            Boston, MA, USA, August 2020<br>
+            <b><font color="red">(PortSwigger's Top Web Hacking Technique of 2019)</font></b><br>
+            <table>
+                <tr>
+                    <td>
+                        <a href="files/usenixsec2020wcd_paper.pdf" target="_blank" title="Paper">
+                            <i class="fa fa-file-pdf fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/usenixsec2020wcd_bibtex.txt" target="_blank" title="BibTeX">
+                            <i class="fa fa-file-alt fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.usenix.org/conference/usenixsecurity20/presentation/mirheidari" target="_blank" title="USENIX">
+                            <i class="ai ai-open-access ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://arxiv.org/abs/1912.10190" target="_blank" title="arXiv">
+                            <i class="ai ai-arxiv ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.semanticscholar.org/paper/Cached-and-Confused%3A-Web-Cache-Deception-in-the-Mirheidari-Arshad/c012aa4fe3c949c946054cbe2d702bcff079c150" target="_blank" title="SemanticScholar">
+                            <i class="ai ai-semantic-scholar ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.researchgate.net/publication/338138254_Cached_and_Confused_Web_Cache_Deception_in_the_Wild" target="_blank" title="ResearchGate">
+                            <i class="ai ai-researchgate-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://deepai.org/publication/cached-and-confused-web-cache-deception-in-the-wild" target="_blank" title="DeepAI">
+                            <i class="ai ai-ceur ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://news.ycombinator.com/item?id=22438604" title="Hacker News" target="_blank">
+                            <i class="fab fa-hacker-news fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.reddit.com/user/sajjadium/comments/fdmqxq/cached_and_confused_web_cache_deception_in_the/" target="_blank" title="Reddit">
+                            <i class="fab fa-reddit fa-2x"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <b>HotFuzz: Discovering Algorithmic Denial-of-Service Vulnerabilities Through Guided Micro-Fuzzing</b><br>
+            William Blair, Andrea Mambretti, <b>Sajjad Arshad</b>, Michael Weissbacher, William Robertson, Engin Kirda, Manuel Egele<br>
+            Network and Distributed System Security Symposium (NDSS)<br>
+            San Diego, CA, USA, February 2020<br>
+            <table>
+                <tr>
+                    <td>
+                        <a href="files/ndss2020hotfuzz_paper.pdf" target="_blank" title="Paper">
+                            <i class="fa fa-file-pdf fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/ndss2020hotfuzz_bibtex.txt" target="_blank" title="BibTeX">
+                            <i class="fa fa-file-alt fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/ndss2020hotfuzz_slides.pdf" target="_blank" title="Slides">
+                            <i class="fa fa-file-powerpoint fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://dx.doi.org/10.14722/ndss.2020.24415" target="_blank" title="doi">
+                            <i class="ai ai-doi ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2002.03416" target="_blank" title="arXiv">
+                            <i class="ai ai-arxiv ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.researchgate.net/publication/339164746_HotFuzz_Discovering_Algorithmic_Denial-of-Service_Vulnerabilities_Through_Guided_Micro-Fuzzing" target="_blank" title="ResearchGate">
+                            <i class="ai ai-researchgate-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://deepai.org/publication/hotfuzz-discovering-algorithmic-denial-of-service-vulnerabilities-through-guided-micro-fuzzing" target="_blank" title="DeepAI">
+                            <i class="ai ai-ceur ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.slideshare.net/SajjadArshad5/hotfuzz-discovering-algorithmic-denialofservice-vulnerabilities-through-guided-microfuzzing" target="_blank" title="SlideShare">
+                            <i class="fab fa-slideshare fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://news.ycombinator.com/item?id=22438580" title="Hacker News" target="_blank">
+                            <i class="fab fa-hacker-news fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.reddit.com/user/sajjadium/comments/fdmqll/hotfuzz_discovering_algorithmic_denialofservice/" target="_blank" title="Reddit">
+                            <i class="fab fa-reddit fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.youtube.com/watch?v=VSI5z8cRUxM" target="_blank" title="YouTube">
+                            <i class="fab fa-youtube fa-2x"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <b>A Longitudinal Analysis of the ads.txt Standard</b><br>
+            Muhammad Ahmad Bashir, <b>Sajjad Arshad</b>, Engin Kirda, William Robertson, Christo Wilson<br>
+            ACM Internet Measurement Conference (IMC)<br>
+            Amsterdam, Netherlands, October 2019<br>
+            <table>
+                <tr>
+                    <td>
+                        <a href="files/imc2019adstxt_paper.pdf" target="_blank" title="Paper">
+                            <i class="fa fa-file-pdf fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/imc2019adstxt_bibtex.txt" target="_blank" title="BibTeX">
+                            <i class="fa fa-file-alt fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/imc2019adstxt_slides.pdf" target="_blank" title="Slides">
+                            <i class="fa fa-file-powerpoint fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://personalization.ccs.neu.edu/Projects/Adstxt/" target="_blank" title="Dataset">
+                            <i class="fa fa-database fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://doi.org/10.1145/3355369.3355603" target="_blank" title="doi">
+                            <i class="ai ai-doi ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.semanticscholar.org/paper/A-Longitudinal-Analysis-of-the-ads.txt-Standard-Bashir-Arshad/56a66420f6998a6d8b8ab0386f6a0888341f2633" target="_blank" title="SemanticScholar">
+                            <i class="ai ai-semantic-scholar ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.researchgate.net/publication/334684080_A_Longitudinal_Analysis_of_the_adstxt_Standard" target="_blank" title="ResearchGate">
+                            <i class="ai ai-researchgate-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.slideshare.net/SajjadArshad5/a-longitudinal-analysis-of-the-adstxt-standard" target="_blank" title="SlideShare">
+                            <i class="fab fa-slideshare fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://news.ycombinator.com/item?id=22438573" title="Hacker News" target="_blank">
+                            <i class="fab fa-hacker-news fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.reddit.com/user/sajjadium/comments/fdmqdk/a_longitudinal_analysis_of_the_adstxt_standard/" target="_blank" title="Reddit">
+                            <i class="fab fa-reddit fa-2x"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <b>Understanding and Mitigating the Security Risks of Content Inclusion in Web Browsers</b><br>
+            Doctor of Philosophy (PhD) Thesis<br>
+            Khoury College of Computer Sciences, Northeastern University<br>
+            Boston, MA, USA, April 2019<br>
+            <table>
+                <tr>
+                    <td>
+                        <a href="files/SajjadArshad_PhDThesis_2019.pdf" target="_blank" title="Thesis">
+                            <i class="fa fa-file-pdf fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/SajjadArshad_PhDThesis_2019_bibtex.txt" target="_blank" title="BibTeX">
+                            <i class="fa fa-file-alt fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/SajjadArshad_PhDThesis_2019_slides.pdf" target="_blank" title="Slides">
+                            <i class="fa fa-file-powerpoint fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://order.proquest.com/OA_HTML/pqdtibeCCtpItmDspRte.jsp?item=13861478&authorId=6066769&sitex=10020:22372:US" target="_blank" title="ProQuest">
+                            <i class="fas fa-book-open fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://doi.org/10.13140/RG.2.2.23407.38568" target="_blank" title="doi">
+                            <i class="ai ai-doi ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2001.03643" target="_blank" title="arXiv">
+                            <i class="ai ai-arxiv ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.researchgate.net/publication/338558392_Understanding_and_Mitigating_the_Security_Risks_of_Content_Inclusion_in_Web_Browsers" target="_blank" title="ResearchGate">
+                            <i class="ai ai-researchgate-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://deepai.org/publication/understanding-and-mitigating-the-security-risks-of-content-inclusion-in-web-browsers" target="_blank" title="DeepAI">
+                            <i class="ai ai-ceur ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.slideshare.net/SajjadArshad5/understanding-and-mitigating-the-security-risks-of-content-inclusion-in-web-browsers" target="_blank" title="SlideShare">
+                            <i class="fab fa-slideshare fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://news.ycombinator.com/item?id=22438571" title="Hacker News" target="_blank">
+                            <i class="fab fa-hacker-news fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.reddit.com/user/sajjadium/comments/fdmq6w/understanding_and_mitigating_the_security_risks/" target="_blank" title="Reddit">
+                            <i class="fab fa-reddit fa-2x"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <b>On the Effectiveness of Type-based Control Flow Integrity</b><br>
+            Reza Mirzazade farkhani, Saman Jafari, <b>Sajjad Arshad</b>, William Robertson, Engin Kirda, Hamed Okhravi<br>
+            Annual Computer Security Applications Conference (ACSAC)<br>
+            San Juan, Puerto Rico, USA, December 2018<br>
+            <table>
+                <tr>
+                    <td>
+                        <a href="files/acsac2018typecfi_paper.pdf" target="_blank" title="Paper">
+                            <i class="fa fa-file-pdf fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/acsac2018typecfi_bibtex.txt" target="_blank" title="BibTeX">
+                            <i class="fa fa-file-alt fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/acsac2018typecfi_slides.pdf" target="_blank" title="Slides">
+                            <i class="fa fa-file-powerpoint fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://github.com/sajjadium/typed-cfi" target="_blank" title="Dataset">
+                            <i class="fa fa-database fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://doi.org/10.1145/3274694.3274739" target="_blank" title="doi">
+                            <i class="ai ai-doi ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://arxiv.org/abs/1810.10649" target="_blank" title="arXiv">
+                            <i class="ai ai-arxiv ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.semanticscholar.org/paper/On-the-Effectiveness-of-Type-based-Control-Flow-Farkhani-Jafari/7812a0f83f0e7a845cd744397a43c89b7917b360" target="_blank" title="SemanticScholar">
+                            <i class="ai ai-semantic-scholar ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.researchgate.net/publication/328410938_On_the_Effectiveness_of_Type-based_Control_Flow_Integrity" target="_blank" title="ResearchGate">
+                            <i class="ai ai-researchgate-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://deepai.org/publication/on-the-effectiveness-of-type-based-control-flow-integrity" target="_blank" title="DeepAI">
+                            <i class="ai ai-ceur ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.slideshare.net/SajjadArshad5/on-the-effectiveness-of-typebased-control-flow-integrity" target="_blank" title="SlideShare">
+                            <i class="fab fa-slideshare fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://sajjadium.blogspot.com/2020/03/on-effectiveness-of-type-based-control.html" target="_blank" title="Blogspot">
+                            <i class="fab fa-blogger fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://news.ycombinator.com/item?id=22438565" title="Hacker News" target="_blank">
+                            <i class="fab fa-hacker-news fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.reddit.com/user/sajjadium/comments/fdmps3/on_the_effectiveness_of_typebased_control_flow/" target="_blank" title="Reddit">
+                            <i class="fab fa-reddit fa-2x"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <b>How Tracking Companies Circumvented Ad Blockers Using WebSockets</b><br>
+            Muhammad Ahmad Bashir, <b>Sajjad Arshad</b>, Engin Kirda, William Robertson, Christo Wilson<br>
+            ACM Internet Measurement Conference (IMC)<br>
+            Boston, MA, USA, October 2018<br>
+            <table>
+                <tr>
+                    <td>
+                        <a href="files/imc2018websockets_paper.pdf" target="_blank" title="Paper">
+                            <i class="fa fa-file-pdf fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/imc2018websockets_bibtex.txt" target="_blank" title="BibTeX">
+                            <i class="fa fa-file-alt fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/imc2018websockets_slides.pdf" target="_blank" title="Slides">
+                            <i class="fa fa-file-powerpoint fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://doi.org/10.1145/3278532.3278573" target="_blank" title="doi">
+                            <i class="ai ai-doi ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.semanticscholar.org/paper/How-Tracking-Companies-Circumvented-Ad-Blockers-Bashir-Arshad/0bc01413666a1dbf5c7777047ed56a937dd4fc55" target="_blank" title="SemanticScholar">
+                            <i class="ai ai-semantic-scholar ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.researchgate.net/publication/334081068_How_Tracking_Companies_Circumvented_Ad_Blockers_Using_WebSockets" target="_blank" title="ResearchGate">
+                            <i class="ai ai-researchgate-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.slideshare.net/SajjadArshad5/how-tracking-companies-circumvented-ad-blockers-using-websockets" target="_blank" title="SlideShare">
+                            <i class="fab fa-slideshare fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://sajjadium.blogspot.com/2020/03/how-tracking-companies-circumvented-ad.html" target="_blank" title="Blogspot">
+                            <i class="fab fa-blogger fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://news.ycombinator.com/item?id=22438564" title="Hacker News" target="_blank">
+                            <i class="fab fa-hacker-news fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.reddit.com/user/sajjadium/comments/fdmphy/how_tracking_companies_circumvented_ad_blockers/" target="_blank" title="Reddit">
+                            <i class="fab fa-reddit fa-2x"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <b>How Tracking Companies Circumvent Ad Blockers Using WebSockets</b><br>
+            Muhammad Ahmad Bashir, <b>Sajjad Arshad</b>, Engin Kirda, William Robertson, Christo Wilson<br>
+            IEEE S&P Workshop on Technology and Consumer Protection (ConPro)<br>
+            San Francisco, CA, USA, May 2018<br>
+            <table>
+                <tr>
+                    <td>
+                        <a href="files/spconpro2018websockets_paper.pdf" target="_blank" title="Paper">
+                            <i class="fa fa-file-pdf fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/spconpro2018websockets_bibtex.txt" target="_blank" title="BibTeX">
+                            <i class="fa fa-file-alt fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/spconpro2018websockets_slides.pdf" target="_blank" title="Slides">
+                            <i class="fa fa-file-powerpoint fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.ieee-security.org/TC/SPW2018/ConPro/papers/bashir-conpro18.pdf" target="_blank" title="IEEE">
+                            <i class="ai ai-ieee ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.slideshare.net/SajjadArshad5/how-tracking-companies-circumvent-ad-blockers-using-websockets" target="_blank" title="SlideShare">
+                            <i class="fab fa-slideshare fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://sajjadium.blogspot.com/2020/03/how-tracking-companies-circumvent-ad.html" target="_blank" title="Blogspot">
+                            <i class="fab fa-blogger fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://news.ycombinator.com/item?id=22837040" title="Hacker News" target="_blank">
+                            <i class="fab fa-hacker-news fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.reddit.com/user/sajjadium/comments/fdmpaz/how_tracking_companies_circumvent_ad_blockers/" target="_blank" title="Reddit">
+                            <i class="fab fa-reddit fa-2x"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <b>Large-Scale Analysis of Style Injection by Relative Path Overwrite</b><br>
+            <b>Sajjad Arshad</b>, Seyed Ali Mirheidari, Tobias Lauinger, Bruno Crispo, Engin Kirda, William Robertson<br>
+            The Web Conference (WWW)<br>
+            Lyon, France, April 2018<br>
+            <b><font color="red">(Honorable Mention)</font></b><br>
+            <table>
+                <tr>
+                    <td>
+                        <a href="files/www2018rpo_paper.pdf" target="_blank" title="Paper">
+                            <i class="fa fa-file-pdf fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/www2018rpo_bibtex.txt" target="_blank" title="BibTeX">
+                            <i class="fa fa-file-alt fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/www2018rpo_slides.pdf" target="_blank" title="Slides">
+                            <i class="fa fa-file-powerpoint fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://dl.acm.org/citation.cfm?id=3186090" target="_blank" title="ACM">
+                            <i class="ai ai-acm ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://arxiv.org/abs/1811.00917" target="_blank" title="arXiv">
+                            <i class="ai ai-arxiv ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.semanticscholar.org/paper/Large-Scale-Analysis-of-Style-Injection-by-Relative-Arshad-Mirheidari/6111fac5ab92fc341416fe668a03516e02c46711" target="_blank" title="SemanticScholar">
+                            <i class="ai ai-semantic-scholar ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.researchgate.net/publication/324509597_Large-Scale_Analysis_of_Style_Injection_by_Relative_Path_Overwrite" target="_blank" title="ResearchGate">
+                            <i class="ai ai-researchgate-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://deepai.org/publication/large-scale-analysis-of-style-injection-by-relative-path-overwrite" target="_blank" title="DeepAI">
+                            <i class="ai ai-ceur ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.slideshare.net/SajjadArshad5/largescale-analysis-of-style-injection-by-relative-path-overwrite" target="_blank" title="SlideShare">
+                            <i class="fab fa-slideshare fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://sajjadium.blogspot.com/2020/03/large-scale-analysis-of-style-injection.html" target="_blank" title="Blogspot">
+                            <i class="fab fa-blogger fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://news.ycombinator.com/item?id=22438556" title="Hacker News" target="_blank">
+                            <i class="fab fa-hacker-news fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.reddit.com/user/sajjadium/comments/fdmp26/largescale_analysis_of_style_injection_by/" target="_blank" title="Reddit">
+                            <i class="fab fa-reddit fa-2x"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <b>Thou Shalt Not Depend on Me: Analysing the Use of Outdated JavaScript Libraries on the Web</b><br>
+            Tobias Lauinger, Abdelberi Chaabane, <b>Sajjad Arshad</b>, William Robertson, Christo Wilson, Engin Kirda<br>
+            Network and Distributed System Security Symposium (NDSS)<br>
+            San Diego, CA, USA, February 2017<br>
+            <table>
+                <tr>
+                    <td>
+                        <a href="files/ndss2017jslibs_paper.pdf" target="_blank" title="Paper">
+                            <i class="fa fa-file-pdf fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/ndss2017jslibs_bibtex.txt" target="_blank" title="BibTeX">
+                            <i class="fa fa-file-alt fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/ndss2017jslibs_slides.pdf" target="_blank" title="Slides">
+                            <i class="fa fa-file-powerpoint fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://seclab.ccs.neu.edu/static/projects/javascript-libraries/" target="_blank" title="Dataset">
+                            <i class="fa fa-database fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://doi.org/10.14722/ndss.2017.23414" target="_blank" title="doi">
+                            <i class="ai ai-doi ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://arxiv.org/abs/1811.00918" target="_blank" title="arXiv">
+                            <i class="ai ai-arxiv ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.semanticscholar.org/paper/Thou-Shalt-Not-Depend-on-Me%3A-Analysing-the-Use-of-Lauinger-Chaabane/6301697b7b838cc53cb7e47c67ae54112fa1fa10" target="_blank" title="SemanticScholar">
+                            <i class="ai ai-semantic-scholar ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.researchgate.net/publication/316913279_Thou_Shalt_Not_Depend_on_Me_Analysing_the_Use_of_Outdated_JavaScript_Libraries_on_the_Web" target="_blank" title="ResearchGate">
+                            <i class="ai ai-researchgate-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://deepai.org/publication/thou-shalt-not-depend-on-me-analysing-the-use-of-outdated-javascript-libraries-on-the-web" target="_blank" title="DeepAI">
+                            <i class="ai ai-ceur ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.slideshare.net/SajjadArshad5/thou-shalt-not-depend-on-me-analysing-the-use-of-outdated-javascript-libraries-on-the-web" target="_blank" title="SlideShare">
+                            <i class="fab fa-slideshare fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://sajjadium.blogspot.com/2020/03/thou-shalt-not-depend-on-me-analysing.html" target="_blank" title="Blogspot">
+                            <i class="fab fa-blogger fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://news.ycombinator.com/item?id=22436522" title="Hacker News" target="_blank">
+                            <i class="fab fa-hacker-news fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.reddit.com/user/sajjadium/comments/fdmogq/thou_shalt_not_depend_on_me_analysing_the_use_of/" target="_blank" title="Reddit">
+                            <i class="fab fa-reddit fa-2x"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <b>"Recommended For You": A First Look at Content Recommendation Networks</b><br>
+            Muhammad Ahmad Bashir, <b>Sajjad Arshad</b>, Christo Wilson<br>
+            ACM Internet Measurement Conference (IMC)<br>
+            Santa Monica, CA, USA, November 2016<br>
+            <table>
+                <tr>
+                    <td>
+                        <a href="files/imc2016crn_paper.pdf" target="_blank" title="Paper">
+                            <i class="fa fa-file-pdf fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/imc2016crn_bibtex.txt" target="_blank" title="BibTeX">
+                            <i class="fa fa-file-alt fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/imc2016crn_slides.pdf" target="_blank" title="Slides">
+                            <i class="fa fa-file-powerpoint fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://personalization.ccs.neu.edu/Projects/Recommended/" target="_blank" title="Dataset">
+                            <i class="fa fa-database fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://dl.acm.org/citation.cfm?id=2987469" target="_blank" title="ACM">
+                            <i class="ai ai-acm ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.semanticscholar.org/paper/%22Recommended-For-You%22%3A-A-First-Look-at-Content-Bashir-Arshad/a784c2b748c875a92df3d79c6fbae50d5a49eb11" target="_blank" title="SemanticScholar">
+                            <i class="ai ai-semantic-scholar ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.researchgate.net/publication/310822058_Recommended_For_You_A_First_Look_at_Content_Recommendation_Networks" target="_blank" title="ResearchGate">
+                            <i class="ai ai-researchgate-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.slideshare.net/SajjadArshad5/recommended-for-you-a-first-look-at-content-recommendation-networks" target="_blank" title="SlideShare">
+                            <i class="fab fa-slideshare fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://sajjadium.blogspot.com/2020/03/recommended-for-you-first-look-at.html" target="_blank" title="Blogspot">
+                            <i class="fab fa-blogger fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://news.ycombinator.com/item?id=22436511" title="Hacker News" target="_blank">
+                            <i class="fab fa-hacker-news fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.reddit.com/user/sajjadium/comments/fdmo66/recommended_for_you_a_first_look_at_content/" target="_blank" title="Reddit">
+                            <i class="fab fa-reddit fa-2x"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <b>Identifying Extension-based Ad Injection via Fine-grained Web Content Provenance</b><br>
+            <b>Sajjad Arshad</b>, Amin Kharraz, William Robertson<br>
+            International Symposium on Research in Attacks, Intrusions and Defenses (RAID)<br>
+            Paris, France, September 2016<br>
+            <table>
+                <tr>
+                    <td>
+                        <a href="files/raid2016origintracer_paper.pdf" target="_blank" title="Paper">
+                            <i class="fa fa-file-pdf fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/raid2016origintracer_bibtex.txt" target="_blank" title="BibTeX">
+                            <i class="fa fa-file-alt fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/raid2016origintracer_slides.pdf" target="_blank" title="Slides">
+                            <i class="fa fa-file-powerpoint fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://github.com/sajjadium/OriginTracer" target="_blank" title="Dataset">
+                            <i class="fa fa-database fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-319-45719-2_19" target="_blank" title="Springer">
+                            <i class="ai ai-springer ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://arxiv.org/abs/1811.00919" target="_blank" title="arXiv">
+                            <i class="ai ai-arxiv ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.semanticscholar.org/paper/Identifying-Extension-Based-Ad-Injection-via-Web-Arshad-Kharraz/4ac06d504386b82b798899d4ed6c6264e7adb75a" target="_blank" title="SemanticScholar">
+                            <i class="ai ai-semantic-scholar ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.researchgate.net/publication/307853207_Identifying_Extension-Based_Ad_Injection_via_Fine-Grained_Web_Content_Provenance" target="_blank" title="ResearchGate">
+                            <i class="ai ai-researchgate-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://deepai.org/publication/identifying-extension-based-ad-injection-via-fine-grained-web-content-provenance" target="_blank" title="DeepAI">
+                            <i class="ai ai-ceur ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.slideshare.net/SajjadArshad5/identifying-extensionbased-ad-injection-via-finegrained-web-content-provenance" target="_blank" title="SlideShare">
+                            <i class="fab fa-slideshare fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://sajjadium.blogspot.com/2020/03/identifying-extension-based-ad.html" target="_blank" title="Blogspot">
+                            <i class="fab fa-blogger fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://news.ycombinator.com/item?id=22436504" title="Hacker News" target="_blank">
+                            <i class="fab fa-hacker-news fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.reddit.com/user/sajjadium/comments/fdmnxu/identifying_extensionbased_ad_injection_via/" target="_blank" title="Reddit">
+                            <i class="fab fa-reddit fa-2x"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <b>Tracing Information Flows Between Ad Exchanges Using Retargeted Ads</b><br>
+            Muhammad Ahmad Bashir, <b>Sajjad Arshad</b>, William Robertson, Christo Wilson<br>
+            USENIX Security Symposium<br>
+            Austin, TX, USA, August 2016<br>
+            <table>
+                <tr>
+                    <td>
+                        <a href="files/usenixsec2016retargetedads_paper.pdf" target="_blank" title="Paper">
+                            <i class="fa fa-file-pdf fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/usenixsec2016retargetedads_bibtex.txt" target="_blank" title="BibTeX">
+                            <i class="fa fa-file-alt fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/usenixsec2016retargetedads_slides.pdf" target="_blank" title="Slides">
+                            <i class="fa fa-file-powerpoint fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://personalization.ccs.neu.edu/Projects/Retargeting/" target="_blank" title="Dataset">
+                            <i class="fa fa-database fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/bashir" target="_blank" title="USENIX">
+                            <i class="ai ai-open-access ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://arxiv.org/abs/1811.00920" target="_blank" title="arXiv">
+                            <i class="ai ai-arxiv ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.semanticscholar.org/paper/Tracing-Information-Flows-Between-Ad-Exchanges-Ads-Bashir-Arshad/13c1fb050c42d6cb2f3974fd3bb70357ada9881c" target="_blank" title="SemanticScholar">
+                            <i class="ai ai-semantic-scholar ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.researchgate.net/publication/328736510_Tracing_Information_Flows_Between_Ad_Exchanges_Using_Retargeted_Ads" target="_blank" title="ResearchGate">
+                            <i class="ai ai-researchgate-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://deepai.org/publication/tracing-information-flows-between-ad-exchanges-using-retargeted-ads" target="_blank" title="DeepAI">
+                            <i class="ai ai-ceur ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.slideshare.net/SajjadArshad5/tracing-information-flows-between-ad-exchanges-using-retargeted-ads" target="_blank" title="SlideShare">
+                            <i class="fab fa-slideshare fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://sajjadium.blogspot.com/2020/03/tracing-information-flows-between-ad.html" target="_blank" title="Blogspot">
+                            <i class="fab fa-blogger fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://news.ycombinator.com/item?id=22436497" title="Hacker News" target="_blank">
+                            <i class="fab fa-hacker-news fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.reddit.com/user/sajjadium/comments/fdmnpf/tracing_information_flows_between_ad_exchanges/" target="_blank" title="Reddit">
+                            <i class="fab fa-reddit fa-2x"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <b>UNVEIL: A Large-Scale, Automated Approach to Detecting Ransomware</b><br>
+            Amin Kharraz, <b>Sajjad Arshad</b>, Collin Muliner, William Robertson, Engin Kirda<br>
+            USENIX Security Symposium<br>
+            Austin, TX, USA, August 2016<br>
+            <table>
+                <tr>
+                    <td>
+                        <a href="files/usenixsec2016unveil_paper.pdf" target="_blank" title="Paper">
+                            <i class="fa fa-file-pdf fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/usenixsec2016unveil_bibtex.txt" target="_blank" title="BibTeX">
+                            <i class="fa fa-file-alt fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/usenixsec2016unveil_slides.pdf" target="_blank" title="Slides">
+                            <i class="fa fa-file-powerpoint fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.zotero.org/sajjadium#I9BPM6JC" target="_blank" title="Zotero">
+                            <i class="ai ai-zotero-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/kharaz" target="_blank" title="USENIX">
+                            <i class="ai ai-open-access ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.semanticscholar.org/paper/Tracing-Information-Flows-Between-Ad-Exchanges-Ads-Bashir-Arshad/13c1fb050c42d6cb2f3974fd3bb70357ada9881c" target="_blank" title="SemanticScholar">
+                            <i class="ai ai-semantic-scholar ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.researchgate.net/publication/338643370_UNVEIL_A_Large-Scale_Automated_Approach_to_Detecting_Ransomware" target="_blank" title="ResearchGate">
+                            <i class="ai ai-researchgate-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.slideshare.net/SajjadArshad5/unveil-a-largescale-automated-approach-to-detecting-ransomware" target="_blank" title="SlideShare">
+                            <i class="fab fa-slideshare fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://sajjadium.blogspot.com/2020/03/unveil-large-scale-automated-approach.html" target="_blank" title="Blogspot">
+                            <i class="fab fa-blogger fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://news.ycombinator.com/item?id=22436469" title="Hacker News" target="_blank">
+                            <i class="fab fa-hacker-news fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.reddit.com/user/sajjadium/comments/fdmnfh/unveil_a_largescale_automated_approach_to/" target="_blank" title="Reddit">
+                            <i class="fab fa-reddit fa-2x"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <b>Include Me Out: In-Browser Detection of Malicious Third-Party Content Inclusions</b><br>
+            <b>Sajjad Arshad</b>, Amin Kharraz, William Robertson<br>
+            International Conference on Financial Cryptography and Data Security (FC)<br>
+            Barbados, February 2016<br>
+            <table>
+                <tr>
+                    <td>
+                        <a href="files/fc2016excision_paper.pdf" target="_blank" title="Paper">
+                            <i class="fa fa-file-pdf fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/fc2016excision_bibtex.txt" target="_blank" title="BibTeX">
+                            <i class="fa fa-file-alt fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.zotero.org/sajjadium#5Z52VTSE" target="_blank" title="Zotero">
+                            <i class="ai ai-zotero-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/fc2016excision_slides.pdf" target="_blank" title="Slides">
+                            <i class="fa fa-file-powerpoint fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://github.com/sajjadium/Excision" target="_blank" title="Dataset">
+                            <i class="fa fa-database fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://link.springer.com/chapter/10.1007%2F978-3-662-54970-4_26" target="_blank" title="Springer">
+                            <i class="ai ai-springer ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://arxiv.org/abs/1811.00926" target="_blank" title="arXiv">
+                            <i class="ai ai-arxiv ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.semanticscholar.org/paper/Include-Me-Out%3A-In-Browser-Detection-of-Malicious-Arshad-Kharraz/14162bf82e600930f6a977800ee85434cfbbb20a" target="_blank" title="SemanticScholar">
+                            <i class="ai ai-semantic-scholar ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.researchgate.net/publication/317234716_Include_Me_Out_In-Browser_Detection_of_Malicious_Third-Party_Content_Inclusions" target="_blank" title="ResearchGate">
+                            <i class="ai ai-researchgate-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://deepai.org/publication/include-me-out-in-browser-detection-of-malicious-third-party-content-inclusions" target="_blank" title="DeepAI">
+                            <i class="ai ai-ceur ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.slideshare.net/SajjadArshad5/include-me-out-inbrowser-detection-of-malicious-thirdparty-content-inclusions" target="_blank" title="SlideShare">
+                            <i class="fab fa-slideshare fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://sajjadium.blogspot.com/2020/02/include-me-out-in-browser-detection-of.html" target="_blank" title="Blogspot">
+                            <i class="fab fa-blogger fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://news.ycombinator.com/item?id=22436460" title="Hacker News" target="_blank">
+                            <i class="fab fa-hacker-news fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.reddit.com/user/sajjadium/comments/fb39v4/include_me_out_inbrowser_detection_of_malicious/" target="_blank" title="Reddit">
+                            <i class="fab fa-reddit fa-2x"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            
+            <b>Alert Correlation Algorithms: A Survey and Taxonomy</b><br>
+            Seyed Ali Mirheidari, <b>Sajjad Arshad</b>, Rasool Jalili<br>
+            Symposium on Cyberspace Safety and Security (CSS), Springer, vol 8300, pp 183-197<br>
+            Zhangjiajie, China, November 2013<br>
+            <table>
+                <tr>
+                    <td>
+                        <a href="files/css2013correlation_paper.pdf" target="_blank" title="Paper">
+                            <i class="fa fa-file-pdf fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/css2013correlation_bibtex.txt" target="_blank" title="BibTeX">
+                            <i class="fa fa-file-alt fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.zotero.org/sajjadium#CCEDT6IG" target="_blank" title="Zotero">
+                            <i class="ai ai-zotero-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-319-03584-0_14" target="_blank" title="Springer">
+                            <i class="ai ai-springer ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://arxiv.org/abs/1811.00921" target="_blank" title="arXiv">
+                            <i class="ai ai-arxiv ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.semanticscholar.org/paper/Alert-Correlation-Algorithms%3A-A-Survey-and-Taxonomy-Mirheidari-Arshad/f5c4f1561701cdc3cc4cbda36d541cb71dd0c16b" target="_blank" title="SemanticScholar">
+                            <i class="ai ai-semantic-scholar ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.researchgate.net/publication/290616954_Alert_Correlation_Algorithms_A_Survey_and_Taxonomy" target="_blank" title="ResearchGate">
+                            <i class="ai ai-researchgate-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://deepai.org/publication/alert-correlation-algorithms-a-survey-and-taxonomy" target="_blank" title="DeepAI">
+                            <i class="ai ai-ceur ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://sajjadium.blogspot.com/2020/02/alert-correlation-algorithms-survey-and.html" target="_blank" title="Blogspot">
+                            <i class="fab fa-blogger fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://news.ycombinator.com/item?id=22436455" title="Hacker News" target="_blank">
+                            <i class="fab fa-hacker-news fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.reddit.com/user/sajjadium/comments/fb39mt/alert_correlation_algorithms_a_survey_and_taxonomy/" target="_blank" title="Reddit">
+                            <i class="fab fa-reddit fa-2x"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            
+            <b>A Comprehensive Approach to Abusing Locality in Shared Web Hosting Servers</b><br>
+            Seyed Ali Mirheidari, <b>Sajjad Arshad</b>, Saeidreza Khoshkdahan, Rasool Jalili<br>
+            IEEE Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)<br>
+            Melbourne, Australia, July 2013<br>
+            <table>
+                <tr>
+                    <td>
+                        <a href="files/trustcom2013top10_paper.pdf" target="_blank" title="Paper">
+                            <i class="fa fa-file-pdf fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/trustcom2013top10_bibtex.txt" target="_blank" title="BibTeX">
+                            <i class="fa fa-file-alt fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.zotero.org/sajjadium#Q5EYKFMN" target="_blank" title="Zotero">
+                            <i class="ai ai-zotero-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://ieeexplore.ieee.org/document/6681025" target="_blank" title="IEEE">
+                            <i class="ai ai-ieee ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://arxiv.org/abs/1811.00922" target="_blank" title="arXiv">
+                            <i class="ai ai-arxiv ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.semanticscholar.org/paper/A-Comprehensive-Approach-to-Abusing-Locality-in-Web-Mirheidari-Arshad/d58b25dbd5cb4aa73bef70f04e94156e85559186" target="_blank" title="SemanticScholar">
+                            <i class="ai ai-semantic-scholar ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.researchgate.net/publication/261199704_A_Comprehensive_Approach_to_Abusing_Locality_in_Shared_Web_Hosting_Servers" target="_blank" title="ResearchGate">
+                            <i class="ai ai-researchgate-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://deepai.org/publication/a-comprehensive-approach-to-abusing-locality-in-shared-web-hosting-servers" target="_blank" title="DeepAI">
+                            <i class="ai ai-ceur ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://sajjadium.blogspot.com/2020/02/a-comprehensive-approach-to-abusing.html" target="_blank" title="Blogspot">
+                            <i class="fab fa-blogger fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://news.ycombinator.com/item?id=22436449" title="Hacker News" target="_blank">
+                            <i class="fab fa-hacker-news fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.reddit.com/user/sajjadium/comments/fb396y/a_comprehensive_approach_to_abusing_locality_in/" target="_blank" title="Reddit">
+                            <i class="fab fa-reddit fa-2x"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            
+            <b>Two Novel Server-Side Attacks against Log File in Shared Web Hosting Servers</b><br>
+            Seyed Ali Mirheidari, <b>Sajjad Arshad</b>, Saeidreza Khoshkdahan, Rasool Jalili<br>
+            IEEE Conference for Internet Technology and Secured Transactions (ICITST)<br>
+            London, UK, December 2012<br>
+            <table>
+                <tr>
+                    <td>
+                        <a href="files/icitst2012sharedlogfile_paper.pdf" target="_blank" title="Paper">
+                            <i class="fa fa-file-pdf fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/icitst2012sharedlogfile_bibtex.txt" target="_blank" title="BibTeX">
+                            <i class="fa fa-file-alt fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.zotero.org/sajjadium#L6G4CE8Z" target="_blank" title="Zotero">
+                            <i class="ai ai-zotero-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://ieeexplore.ieee.org/document/6470968" target="_blank" title="IEEE">
+                            <i class="ai ai-ieee ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://arxiv.org/abs/1811.00923" target="_blank" title="arXiv">
+                            <i class="ai ai-arxiv ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.semanticscholar.org/paper/Two-novel-server-side-attacks-against-log-file-in-Mirheidari-Arshad/88c6b719c6e3a6170febf8829ca667b80ae438f7" target="_blank" title="SemanticScholar">
+                            <i class="ai ai-semantic-scholar ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.researchgate.net/publication/261050999_Two_novel_server-side_attacks_against_log_file_in_Shared_Web_Hosting_servers" target="_blank" title="ResearchGate">
+                            <i class="ai ai-researchgate-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://deepai.org/publication/two-novel-server-side-attacks-against-log-file-in-shared-web-hosting-servers" target="_blank" title="DeepAI">
+                            <i class="ai ai-ceur ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://sajjadium.blogspot.com/2020/02/two-novel-server-side-attacks-against.html" target="_blank" title="Blogspot">
+                            <i class="fab fa-blogger fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://news.ycombinator.com/item?id=22436436" title="Hacker News" target="_blank">
+                            <i class="fab fa-hacker-news fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.reddit.com/user/sajjadium/comments/fal6ho/two_novel_serverside_attacks_against_log_file_in/" target="_blank" title="Reddit">
+                            <i class="fab fa-reddit fa-2x"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            
+            <b>Performance Evaluation of Shared Hosting Security Methods</b><br>
+            Seyed Ali Mirheidari, <b>Sajjad Arshad</b>, Saeidreza Khoshkdahan<br>
+            IEEE Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)<br>
+            Liverpool, UK, June 2012<br>
+            <table>
+                <tr>
+                    <td>
+                        <a href="files/trustcom2012sharedhosting_paper.pdf" target="_blank" title="Paper">
+                            <i class="fa fa-file-pdf fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/trustcom2012sharedhosting_bibtex.txt" target="_blank" title="BibTeX">
+                            <i class="fa fa-file-alt fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.zotero.org/sajjadium#M3WXGT5I" target="_blank" title="Zotero">
+                            <i class="ai ai-zotero-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://ieeexplore.ieee.org/document/6296131" target="_blank" title="IEEE">
+                            <i class="ai ai-ieee ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://arxiv.org/abs/1811.00924" target="_blank" title="arXiv">
+                            <i class="ai ai-arxiv ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.semanticscholar.org/paper/Performance-Evaluation-of-Shared-Hosting-Security-Mirheidari-Arshad/4ad1a0e1a2f837524c535433991622a681b32f80" target="_blank" title="SemanticScholar">
+                            <i class="ai ai-semantic-scholar ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.researchgate.net/publication/261239824_Performance_Evaluation_of_Shared_Hosting_Security_Methods" target="_blank" title="ResearchGate">
+                            <i class="ai ai-researchgate-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://deepai.org/publication/performance-evaluation-of-shared-hosting-security-methods" target="_blank" title="DeepAI">
+                            <i class="ai ai-ceur ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://sajjadium.blogspot.com/2020/02/performance-evaluation-of-shared.html" target="_blank" title="Blogspot">
+                            <i class="fab fa-blogger fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://news.ycombinator.com/item?id=22436429" title="Hacker News" target="_blank">
+                            <i class="fab fa-hacker-news fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.reddit.com/user/sajjadium/comments/fajay2/performance_evaluation_of_shared_hosting_security/" target="_blank" title="Reddit">
+                            <i class="fab fa-reddit fa-2x"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            
+            <b>An Anomaly-based Botnet Detection Approach for Identifying Stealthy Botnets</b><br>
+            <b>Sajjad Arshad</b>, Maghsoud Abbaspour, Mehdi Kharrazi, Hooman Sanatkar<br>
+            IEEE Conference on Computer Applications and Industrial Electronics (ICCAIE)<br>
+            Penang, Malaysia, December 2011<br>
+            <table>
+                <tr>
+                    <td>
+                        <a href="files/iccaie2011botnet_paper.pdf" target="_blank" title="Paper">
+                            <i class="fa fa-file-pdf fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/iccaie2011botnet_bibtex.txt" target="_blank" title="BibTeX">
+                            <i class="fa fa-file-alt fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.zotero.org/sajjadium#7TU3IKFF" target="_blank" title="Zotero">
+                            <i class="ai ai-zotero-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://github.com/sajjadium/botnet-detection" target="_blank" title="Dataset">
+                            <i class="fa fa-database fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://ieeexplore.ieee.org/document/6162198" target="_blank" title="IEEE">
+                            <i class="ai ai-ieee ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://arxiv.org/abs/1811.00925" target="_blank" title="arXiv">
+                            <i class="ai ai-arxiv ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.semanticscholar.org/paper/An-anomaly-based-botnet-detection-approach-for-Arshad-Abbaspour/74a4d75482d0d8c36cc76addc71c70d61dfaa8d1" target="_blank" title="SemanticScholar">
+                            <i class="ai ai-semantic-scholar ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.researchgate.net/publication/239765723_An_Anomaly-based_Botnet_Detection_Approach_for_Identifying_Stealthy_Botnets" target="_blank" title="ResearchGate">
+                            <i class="ai ai-researchgate-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://deepai.org/publication/an-anomaly-based-botnet-detection-approach-for-identifying-stealthy-botnets" target="_blank" title="DeepAI">
+                            <i class="ai ai-ceur ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://sajjadium.blogspot.com/2020/02/an-anomaly-based-botnet-detection_25.html" target="_blank" title="Zotero">
+                            <i class="fab fa-blogger fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://news.ycombinator.com/item?id=22420771" title="Hacker News" target="_blank">
+                            <i class="fab fa-hacker-news fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.reddit.com/r/netsec/comments/fc95ra/an_anomalybased_botnet_detection_approach_for/" target="_blank" title="Reddit">
+                            <i class="fab fa-reddit fa-2x"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+            <br>
+
+            <b>A Disk Scheduling Algorithm Based on ANT Colony Optimization</b><br>
+            Hossein Rahmani, <b>Sajjad Arshad</b>, Mohsen Ebrahimi Moghaddam<br>
+            ISCA Conference on Parallel and Distributed Computing and Communication Systems (PDCCS)<br>
+            Louisville, KY, USA, September 2009<br>
+            <table>
+                <tr>
+                    <td>
+                        <a href="files/pdccs2009diskscheduling_paper.pdf" target="_blank" title="Paper">
+                            <i class="fa fa-file-pdf fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="files/pdccs2009diskscheduling_bibtex.txt" target="_blank" title="BibTeX">
+                            <i class="fa fa-file-alt fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.zotero.org/sajjadium#HFHPD6LZ" target="_blank" title="Zotero">
+                            <i class="ai ai-zotero-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://arxiv.org/abs/2003.00926" target="_blank" title="arXiv">
+                            <i class="ai ai-arxiv ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.semanticscholar.org/paper/A-Disk-Scheduling-Algorithm-Based-on-ANT-Colony-Rahmani-Arshad/9825c879ad53de0cf157b49f27b218f4e27b4d9b" target="_blank" title="SemanticScholar">
+                            <i class="ai ai-semantic-scholar ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.researchgate.net/publication/338660526_A_Disk_Scheduling_Algorithm_Based_on_ANT_Colony_Optimization" target="_blank" title="ResearchGate">
+                            <i class="ai ai-researchgate-square ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://deepai.org/publication/a-disk-scheduling-algorithm-based-on-ant-colony-optimization" target="_blank" title="DeepAI">
+                            <i class="ai ai-ceur ai-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://sajjadium.blogspot.com/2020/02/a-disk-scheduling-algorithm-based-on.html" target="_blank" title="Blogspot">
+                            <i class="fab fa-blogger fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://gist.github.com/sajjadium/96d4d3f253a5fe201c57b145fc8002b9" target="_blank" title="GitHub Gist">
+                            <i class="fab fa-github-square fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://news.ycombinator.com/item?id=22420767" title="Hacker News" target="_blank">
+                            <i class="fab fa-hacker-news fa-2x"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="https://www.reddit.com/user/sajjadium/comments/faippu/a_disk_scheduling_algorithm_based_on_ant_colony/" target="_blank" title="Reddit">
+                            <i class="fab fa-reddit fa-2x"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
