@@ -298,9 +298,12 @@
         <iframe id="other_contents" name="other_contents" src="publications.html" style="height:100%;width:100%;" scrolling="no" frameborder="0"></iframe>
         <script>
             var iframe = document.getElementById("other_contents");
+            var parentWindow = window;
             iframe.onload = function() {
+                var parentWindowScrollY = parentWindow.scrollY;
                 iframe.style.height = "100%";
                 iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+                parentWindow.scrollTo(0, parentWindowScrollY);
             }
         </script>
      </body>
