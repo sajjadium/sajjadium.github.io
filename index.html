@@ -305,18 +305,29 @@
         <script>
             var iframe = document.getElementById("other_contents");
             var parentWindow = window;
-            iframe.onload = function() {
+            // iframe.onload = function() {
+            //     var parentWindowScrollY = parentWindow.scrollY;
+            //     iframe.style.height = "100%";
+            //     iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+            //     parentWindow.scrollTo(0, parentWindowScrollY);
+            //     setTimeout(function() {
+            //         var parentWindowScrollY = parentWindow.scrollY;
+            //         iframe.style.height = "100%";
+            //         iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+            //         parentWindow.scrollTo(0, parentWindowScrollY);
+            //     }, 3000);
+            // }
+
+            // Callback function to execute when mutations are observed
+            const callback = function(mutationsList, observer) {
                 var parentWindowScrollY = parentWindow.scrollY;
                 iframe.style.height = "100%";
                 iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
                 parentWindow.scrollTo(0, parentWindowScrollY);
-                setTimeout(function() {
-                    var parentWindowScrollY = parentWindow.scrollY;
-                    iframe.style.height = "100%";
-                    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-                    parentWindow.scrollTo(0, parentWindowScrollY);
-                }, 3000);
-            }
+            };
+
+            // Start observing the target node for configured mutations
+            new MutationObserver(callback).observe(iframe, { attributes: true, childList: true, subtree: true });
         </script>
      </body>
 </html>
