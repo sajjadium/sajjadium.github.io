@@ -326,7 +326,7 @@
                     parentWindow.scrollTo(0, parentWindowScrollY);
                 };
 
-                new MutationObserver(callback).observe(iframe.document.body, { attributes: true, childList: true, subtree: true });
+                new MutationObserver(callback).observe(iframe.contentWindow.document, { attributes: true, childList: true, subtree: true });
             }
         </script>
      </body>
