@@ -312,19 +312,6 @@
                 parentWindow.scrollTo(0, parentWindowScrollY);
             };
 
-            // iframe.onload = function() {
-            //     var parentWindowScrollY = parentWindow.scrollY;
-            //     iframe.style.height = "100%";
-            //     iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-            //     parentWindow.scrollTo(0, parentWindowScrollY);
-            //     setTimeout(function() {
-            //         var parentWindowScrollY = parentWindow.scrollY;
-            //         iframe.style.height = "100%";
-            //         iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-            //         parentWindow.scrollTo(0, parentWindowScrollY);
-            //     }, 3000);
-            // }
-
             iframe.onload = function() {
                 updatePageSize();
                 new MutationObserver(updatePageSize).observe(iframe.contentWindow.document, {
