@@ -305,6 +305,13 @@
         <script>
             var iframe = document.getElementById("other_contents");
             var parentWindow = window;
+            function updatePageSize() {
+                var parentWindowScrollY = parentWindow.scrollY;
+                iframe.style.height = "100%";
+                iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+                parentWindow.scrollTo(0, parentWindowScrollY);
+            };
+
             // iframe.onload = function() {
             //     var parentWindowScrollY = parentWindow.scrollY;
             //     iframe.style.height = "100%";
@@ -319,14 +326,12 @@
             // }
 
             iframe.onload = function() {
-                const callback = function() {
-                    var parentWindowScrollY = parentWindow.scrollY;
-                    iframe.style.height = "100%";
-                    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-                    parentWindow.scrollTo(0, parentWindowScrollY);
-                };
-
-                new MutationObserver(callback).observe(iframe.contentWindow.document, { attributes: true, childList: true, subtree: true });
+                updatePageSize();
+                new MutationObserver(updatePageSize).observe(iframe.contentWindow.document, {
+                    attributes: true,
+                    childList: true,
+                    subtree: true 
+                });
             }
         </script>
      </body>
