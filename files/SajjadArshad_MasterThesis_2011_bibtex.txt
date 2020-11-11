@@ -1,0 +1,6 @@
+@phdthesis{MasterThesis2011Botnet,
+    author       = {Sajjad Arshad}, 
+    title        = {Botnet Detection based on Anomaly Behaviors in Network Traffic},
+    school       = {Department of Electrical & Computer Engineering, Shahid Beheshti University},
+    year         = 2011,
+}
