@@ -1,0 +1,9 @@
+@article{privsec2022hotfuzz,
+    title = {HotFuzz: Discovering Temporal and Spatial Denial-of-Service Vulnerabilities Through Guided Micro-Fuzzing},
+    authors = {William Blair and Andrea Mambretti and Sajjad Arshad and Michael Weissbacher and William Robertson and Engin Kirda and Manuel Egele},
+    journal = {ACM Transactions on Privacy and Security},
+    year = {2022},
+    volume  = {25},
+    number  = {33},
+    pages   = {1--35}
+}
