@@ -1,0 +1,8 @@
+@inproceedings{www2024captchas,
+    title = {The Matter of Captchas: An Analysis of a Brittle Security Feature on the Modern Web},
+    authors = {Behzad Ousat and Esteban Schafir and Mohammad Ali Tofighi and Duc C Hoang and Cuong V Nguyen and Sajjad Arshad and Selcuk Uluagac and Amin Kharraz},
+    booktitle = {The Web Conference ({WWW})},
+    month = {5},
+    year = {2024},
+    location = {Singapore}
+}
